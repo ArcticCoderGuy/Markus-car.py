@@ -8,5 +8,11 @@ class Car:
         self.year = year
         self.price = price
         self.horsepower = horsepower
+   
+    def get descriptive_name(self):
+        """Return a neatly formatted descriptive name."""
+        long_name = f"{self.make} {self.model} {self.year} {self.price} {self.horsepower}"
 
-git 
+        return long_name.title().replace("_"," ")
+
+        
